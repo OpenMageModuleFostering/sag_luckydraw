@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+    </default>
+	<luckydraw_index_index>
+        <reference name="content">
+            <block type="luckydraw/luckydraw" name="luckydraw" template="luckydraw/luckydraw.phtml" />
+        </reference>
+    </luckydraw_index_index>
+</layout> 

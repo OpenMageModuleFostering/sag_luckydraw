@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Sag_Luckydraw>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Sag_Luckydraw>
+    </modules>
+</config> 

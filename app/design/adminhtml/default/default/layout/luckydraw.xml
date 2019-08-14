@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <luckydraw_adminhtml_luckydraw_index>
+        <reference name="content">
+            <block type="luckydraw/adminhtml_luckydraw" name="luckydraw" />
+        </reference>
+    </luckydraw_adminhtml_luckydraw_index>
+	
+	<luckydraw_adminhtml_subscriber_index>
+        <reference name="content">
+            <block type="luckydraw/adminhtml_subscriber" name="subscriber" />
+        </reference>
+    </luckydraw_adminhtml_subscriber_index>
+	
+</layout>

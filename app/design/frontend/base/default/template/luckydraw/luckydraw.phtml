@@ -1,0 +1,29 @@
+<?php
+	if($_POST['submit_luckydraw']=='Submit'){ $this->postAction(); }
+?>
+
+<div class="page-title">
+    <h1><?php echo $this->__('Luckydraw') ?></h1>
+</div>
+
+<?php $cnt = count($this->getLuckydraw()); ?>
+<?php if($cnt > 0 ): ?>
+<div id="luckydraw_con">
+	<?php foreach ($this->getLuckydraw() as $item): ?>                  
+        <img src="<?php echo $this->resizeImage($item->getFilename(), 208, 230, ''); ?>" alt="<?php   echo $item->getTitle(); ?>" />
+		<?php   echo $item->getTitle(); ?>
+		<form action="<?php echo $this->getFormActionUrl(); ?>" method="post" id="luckydraw-validate-detail">
+        	<input type="hidden" name="luckydraw_id" id="luckydraw_id" value="<?php   echo $item->getLuckydrawId(); ?>" />
+        	<input type="text" name="email" id="email" class="input-text required-entry validate-email" />
+            <input type="submit" name="submit_luckydraw" value="Submit" />
+        </form>
+        <script type="text/javascript">
+			//<![CDATA[
+				var luckydrawFormDetail = new VarienForm('luckydraw-validate-detail');
+			//]]>
+		</script>
+	<?php endforeach;  ?> 
+</div>
+<?php else: ?>
+	<div>There is no Luckydraw here</div>
+<?php endif; ?>
