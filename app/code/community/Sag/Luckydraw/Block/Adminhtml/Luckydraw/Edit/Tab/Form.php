@@ -18,7 +18,7 @@ class Sag_Luckydraw_Block_Adminhtml_Luckydraw_Edit_Tab_Form extends Mage_Adminht
  
       $fieldset->addField('filename', 'image', array(
           'label'     => Mage::helper('luckydraw')->__('Image'),
-          'required'  => false,
+          'required'  => true,
           'name'      => 'filename',
 	  ));
 		
