@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/SAG_Luckydraw",
+    "name": "OpenMageModuleFostering\/SAG_Luckydraw",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "This module is use for create lucky draw and user can subscribe for lucky draw.",
     "authors": [
-    {
-        "name": "Navneet",
-        "email": "navneet.kshk@gmail.com"
-    }
-],
+        {
+            "name": "Navneet",
+            "email": "navneet.kshk@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
